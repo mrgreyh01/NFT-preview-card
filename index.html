@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style type="text/tailwindcss">
+      @theme {
+        --color-main: #0d192bff;
+        --color-card: #14253dff;
+        --color-line: #2f415bff;
+        --color-white: #ffffffff;
+        --color-blue: #8bacdaff;
+        --color-cyan: #00fff7ff;
+        --font-outfit: 'Outfit', sans-serif;
+        --breakpoint-sm: 450px;
+      }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+  <main class="flex items-center justify-center min-h-screen bg-main font-outfit">
+    <div class="flex flex-col bg-card p-7 rounded-2xl space-y-6 w-[85%] max-w-sm my-15">
+      <img class="w-full h-full rounded-md" src="./images/image-equilibrium.jpg" alt="">
+      <div class="flex flex-col space-y-4">
+        <h2 class="text-white text-[22px] font-semibold">Equilibrium #3429</h2>
+        <p class="text-blue text-base sm:text-lg">Our Equilibrium collection promotes balance and calm.</p>
+        <div class="flex items-center justify-between border-b border-line pb-4">
+          <p class="flex items-center text-base text-cyan gap-2"><img src="./images/icon-ethereum.svg" alt="">0.041 ETH</p>
+          <p class="flex items-center text-base text-blue gap-2"><img src="./images/icon-clock.svg" alt="">3 days left</p>
+        </div>
+        <div class="flex items-center justify-start gap-4">
+          <img class="w-9 h-9 rounded-full border-1 border-white" src="./images/image-avatar.png" alt="">
+          <p class="text-[17px] text-blue">Creation of <span class="text-white"> Jules Wyvern</span></p>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
